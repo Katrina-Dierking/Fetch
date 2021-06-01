@@ -1,0 +1,64 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+
+.appBody {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.toggleBar {
+    align-items: center;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    padding: 2% 3%;
+    width: 110%;
+    -webkit-box-shadow: 0px 2px 15px -8px black;
+    -moz-box-shadow: 0px 2px 15px -8px  black;
+    box-shadow: 0px 2px 15px -8px  teal;
+  }
+  
+  .dark-mode__toggle {
+    background: papayawhip;
+    border-radius: 50px;
+    border: 1px solid black;
+    height: 40px;
+    position: relative;
+    width: 70px;
+    padding:.3%;
+  }
+  
+  .toggle {
+    background:teal;
+    border-radius: 20px;
+    height: 18px;
+    /* left: 3; */
+    position: absolute;
+    transition: 0.2s;
+    width: 15px;
+  }
+  
+  .toggled {
+    left: 38px;
+  }
+  
+  
+  .dark-mode {
+    color: black;
+    background-color:rgb(20, 105, 105);
+  }
+  
+    .dark-mode .toggleBar {
+      background-color: lightgrey;
+    }
+  
+
+
