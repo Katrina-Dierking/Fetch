@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react'
+import {Link} from 'react-router-dom'
 import axios from 'axios'
-import {SearchContainer} from './SearchDesign'
+import {SearchContainer} from '../designFiles/SearchDesign'
+
 
 function Search() {
 
@@ -27,17 +29,18 @@ function Search() {
     let filteredItems = sortedItems.filter(list => list.name !== "" && list.name !== null);
 
     return (
+        <>
         <SearchContainer>
         <div className="wrapper">
             <nav>
                 <input type="checkbox" id="show-search" onChange={event =>{setSearchList(event.target.value)}} />
                 <div className="content">
                     <div className = "logo"><a href="#"><h1>fetch</h1></a></div>
-                    <ul className="links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Lists Text</a></li>
-                    </ul>
+                    <div className = "links">
+                        <Link to= './'><h2 className = "linkText">Home</h2></Link>
+                        <Link to= './about'><h2 className = "linkText">About</h2></Link>
+                        <Link to= './listlinks'><h2 className = "linkText">List Text</h2></Link>
+                    </div>
                 </div>
                 <label for="show-search" className="search-icon"><i className="fas fa-search"></i></label>
 
@@ -46,9 +49,9 @@ function Search() {
                     <button type="submit" className="go-icon"><i className="fas fa-long-arrow-alt-right"></i></button>
 
                     {filteredItems.filter((value) => {
-                        if (searchList == '') {
+                        if (searchList === '') {
                             return value
-                        }else if(value.listId == searchList) {
+                        }else if(value.listId === searchList) {
                             return value
                         }
                     }).map((value, index) => {
@@ -63,6 +66,7 @@ function Search() {
             </nav>
         </div>
         </SearchContainer>
+        </>
     )
 
 

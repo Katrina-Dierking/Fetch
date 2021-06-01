@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card} from './CardDesign'
+import { Card} from './designFiles/CardDesign'
 
 function ListCard( {listId, name} ) {
     return (

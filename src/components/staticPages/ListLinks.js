@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
-// import { Container } from './CardDesign'
-import styled from 'styled-components'
-import Links from './Links'
-import Search from './Search';
+import Links from '../Links'
+import Layout from '../sharedFiles/Layout'
+import {ListPg, Container} from '../designFiles/ListLinksDesign'
+
+
+
 export default function Lists () {
     const [ items, setItems ] = useState([]);
 
@@ -28,11 +30,12 @@ export default function Lists () {
 
 
     return  (
-        <>
+        <ListPg>
+        <Layout>
             <Container>
                 {filteredItems.map((item, index) => {
                         return (
-                                <div className = "listLinks">
+                                <div className = "listtext2">
                                    <Links 
                                     key = {index}
                                     listId = {item.listId}
@@ -44,14 +47,7 @@ export default function Lists () {
                         )
                 })}
             </Container>
-    </>
+            </Layout>
+        </ListPg>
     )
 }
-
-const Container = styled.div`
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:left;
-    width: 20%;
-`
