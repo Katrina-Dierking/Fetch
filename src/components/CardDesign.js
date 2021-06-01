@@ -1,9 +1,10 @@
 import styled from "styled-components"
 
 export const Header = styled.h1`
-    border: 1px solid blue;
     font-family: The Wild Hammers;
-    padding:3%;
+    font-size:3rem;
+    color:black;
+    padding:1%;
 `
 export const Container = styled.div`
     border-bottom: 10px solid black;
@@ -14,9 +15,9 @@ export const Container = styled.div`
 `
 export const Card = styled.div`
     border: 1px solid slategrey;
-    margin-bottom: 2%;
-    padding: 2%;
-    width: 10%;
-    background-color: #d6d6d6;
+    margin: .5%;
+    padding: .5%;
+    width: 5%;
+    background:#c3c3c3 ;
     font-family: The Wild Hammers;
 `

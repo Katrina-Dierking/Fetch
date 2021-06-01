@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
-import ListCard from './ListCard';
-import { Container } from './CardDesign'
-// import ReactPaginate from 'react-paginate'
-
+// import { Container } from './CardDesign'
+import styled from 'styled-components'
+import Links from './Links'
+import Search from './Search';
 export default function Lists () {
     const [ items, setItems ] = useState([]);
 
@@ -32,11 +32,14 @@ export default function Lists () {
             <Container>
                 {filteredItems.map((item, index) => {
                         return (
-                                <ListCard 
+                                <div className = "listLinks">
+                                   <Links 
                                     key = {index}
                                     listId = {item.listId}
                                     name = {item.name}
                                 />
+                                    
+                                    </div>
 
                         )
                 })}
@@ -44,3 +47,11 @@ export default function Lists () {
     </>
     )
 }
+
+const Container = styled.div`
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:left;
+    width: 20%;
+`
