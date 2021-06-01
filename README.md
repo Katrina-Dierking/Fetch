@@ -26,6 +26,7 @@
 ### Future Features: 
 * Functioning Search Bar.
 * CRUD operations to add, update, and delete list items.
+* Pagination to include one page for each listId
 
 ![Coffee Divider](https://blog.hertimetocode.com/wp-content/uploads/2021/04/coffee-pulse.png)
 
