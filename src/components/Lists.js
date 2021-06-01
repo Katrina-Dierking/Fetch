@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import ListCard from './ListCard';
-import { Container } from './CardDesign'
-// import ReactPaginate from 'react-paginate'
+import { Container } from './designFiles/CardDesign'
 
 export default function Lists () {
     const [ items, setItems ] = useState([]);

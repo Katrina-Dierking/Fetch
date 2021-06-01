@@ -1,19 +1,21 @@
-
-import Lists from './components/Lists';
-import ListLinks from './components/ListLinks'
-import Search from './components/Search';
-import ToggleBar from './components/ToggleBar';
+import ListLinks from './components/ListLinks';
+import Home from './components/Home';
+import About from './components/About';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import './App.css'
 
 
 function App() {
   return (
     <>
-      <ToggleBar />
-      <Search />
-      <div className = "appBody">
-      <Lists />
-      {/* <ListLinks /> */}
+    <div className = "appBody">
+    <Router>
+      <Switch>
+        <Route exact path = '/' component = {Home} />
+        <Route path = '/about' component = {About} />
+        <Route path = '/listlinks' component = {ListLinks} />
+      </Switch> 
+    </Router> 
     </div>
     </>
   );

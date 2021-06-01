@@ -41,23 +41,34 @@ export const SearchContainer = styled.div`
         font-weight: 600;
     }
 
-    .content .links li {
-        list-style:none;
-        width: 50%;
+    .content {
+        width: 70%;
     }
 
-    .content .links li a {
+    .content .links{
+        list-style:none;
+        width: 100%;
+        align-items:center;
+        display:flex;
+        justify-content:space-around;
+    }
+
+    .content .links .linkText{
         color: #fff;
         font-size: 18px;
         font-weight: 500;
         text-decoration:none;
         padding: 10%;
-        border-radius: 5px;
-        transition: all 0.3s ease;
+        width: 140%;
     }
 
-    .content .links li:hover a {
+
+    .content .links .linkText:hover{
         background:teal;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        width: 100%;
+        font-color:white;
     }
 
     .wrapper .search-icon {
