@@ -23,10 +23,12 @@
 * Each page consists of a Layout that holds the ToggleBar, Search Bar, and Footer. 
 * Navigation Bar
 
-### Future Features: 
+### Future Features/Plans: 
 * Functioning Search Bar.
 * CRUD operations to add, update, and delete list items.
 * Pagination to include one page for each listId
+
+* cleaning up the files to make them more DRY, especially with the axios calls.
 
 ![Coffee Divider](https://blog.hertimetocode.com/wp-content/uploads/2021/04/coffee-pulse.png)
 
@@ -34,3 +36,4 @@
 1. Axios get request to the API to pull in the array of data objects.
 2. Filter method to exclude all items that had an empty string or null in the name. 
 3. Map method over the filtered items to create the cards and lists. 
+
