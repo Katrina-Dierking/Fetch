@@ -1,6 +1,6 @@
 import React from 'react'
 import Search from './Search'
-import ToggleBar from '../ToggleBar'
+import ToggleBar from './ToggleBar'
 import Footer from './Footer'
 
 

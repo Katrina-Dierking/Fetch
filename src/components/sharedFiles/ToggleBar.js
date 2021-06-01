@@ -1,6 +1,6 @@
 import React from 'react';
-import useDarkMode from '../hooks/useDarkMode';
-import {TogglePg} from './designFiles/ToggleDesign'
+import useDarkMode from '../../hooks/useDarkMode';
+import {TogglePg} from '../designFiles/ToggleDesign'
 
 const ToggleBar = () => {
 
