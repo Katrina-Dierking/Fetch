@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../sharedFiles/Layout'
-import {AboutPg} from '../../designFiles/AboutDesign'
+import {AboutPg} from '../../components/designFiles/AboutDesign'
 
 function About() {
     return (

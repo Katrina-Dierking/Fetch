@@ -1,5 +1,5 @@
 import React from 'react'
-import {FooterContainer} from './designFiles/FooterDesign'
+import {FooterContainer} from '../designFiles/FooterDesign'
 
 export default function Footer() {
     return (

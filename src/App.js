@@ -1,6 +1,6 @@
-import ListLinks from './components/ListLinks';
-import Home from './components/Home';
-import About from './components/About';
+import ListLinks from './components/staticPages/ListLinks';
+import Home from './components/staticPages/Home';
+import About from './components/staticPages/About';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import './App.css'
 
